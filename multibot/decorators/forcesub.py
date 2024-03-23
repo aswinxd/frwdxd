@@ -10,10 +10,10 @@ async def you_must_join(client, m):
     chat_info = await client.get_chat(FORCE_SUB_CHANNEL)
     JOIN_TEXT = ""
     if chat_info.username:
-        JOIN_TEXT = f"Must join @{chat_info.username} to use this bot.\nJoin and start bot again."
+        JOIN_TEXT = f"join @{chat_info.username} to use this bot.\nJoin and start bot again."
     else:
         CHAT_NAME = chat_info.title
-        JOIN_TEXT = f"Must join [{CHAT_NAME}]({chat_info.invite_link}) to use this bot.\nJoin and start bot again."
+        JOIN_TEXT = f"join [{CHAT_NAME}]({chat_info.invite_link}) to use this bot.\nJoin and start bot again."
     await client.send_message(
         chat_id=m.chat.id,
         text=JOIN_TEXT,
