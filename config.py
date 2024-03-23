@@ -1,7 +1,7 @@
 import os
 
-API_ID = int(os.environ.get("API_ID","12799559"))
-API_HASH = os.environ.get("API_HASH","QT2AAUK9RC6GX96E7D6S8YWJ")
+API_ID = int(os.environ.get("API_ID","22710783"))
+API_HASH = os.environ.get("API_HASH","616ea341acfed51f916506c20b8a0a44")
 BOT_TOKEN = os.environ.get("BOT_TOKEN","6765987978:AAHuqASdsQPFUV2O28nbx9nbM0QbTwHKL4U")
 MONGO_DB_URI = os.environ.get("MONGO_DB_URI","mongodb+srv://mdalizadeh16:lavos@cluster0.u21tcwa.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP = int(os.environ.get("LOG_GROUP","-1002055628777"))
