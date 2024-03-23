@@ -19,17 +19,14 @@ from multibot.utils.get_user_info import get_user_info
 @bot.on_message(filters.command("start") & filters.private)
 @force_sub
 async def start(c: bot, m: Message):
-    start_text = f"""Hey! 🩷 {m.from_user.mention}, welcome to @{BOT_USERNAME}.
+    start_text = f"""Hey!  {m.from_user.mention}, welcome to @{BOT_USERNAME}.
 
 **I'm a simple message forwarder bot from channel to channel based with pyrogram.
 Any bugs? Report to developer.**
 
 To know more /help
 
-For admins /admin_help
-
-Developed with 🩵 @minkxx69.
-Powered by @nrbots"""
+For admins /admin_help"""
     await c.send_message(
         chat_id=m.chat.id,
         text=start_text,
